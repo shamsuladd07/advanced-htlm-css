@@ -3,7 +3,7 @@ body{
     font-family: 'Poppins', sans-serif
 }
 /* Header Style  */
-.head h3{
+.header h3{
     font-size: 24px;
     width: 245px;
     height: 53px;
@@ -11,7 +11,7 @@ body{
     padding-left: 120px;
     background-color: #FFFFFF;
 }
-.container{
+.main-section{
     display: flex;
 }
 .influencer{
@@ -35,4 +35,37 @@ body{
     height: 415px;
     padding-top: 132px;
     padding-left: 122px;
+}
+
+.title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 34px;
+}
+.product{
+    width: 300px;
+    height: 450px;
+    background-color: #f7efef;
+    /* border: 1px solid #8d3232; */
+    padding: 10px;
+    /* margin: 10px; */
+    margin-bottom: 36px;
+    border-radius: 5px;
+    box-shadow: 5px 3px 10px #ccc;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.fa-star.filled{
+    color: #d1a52c;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.more-products a{
+    text-decoration: none;
 }
