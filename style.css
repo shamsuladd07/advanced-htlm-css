@@ -1,0 +1,38 @@
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif
+}
+/* Header Style  */
+.head h3{
+    font-size: 24px;
+    width: 245px;
+    height: 53px;
+    padding-top: 88px;
+    padding-left: 120px;
+    background-color: #FFFFFF;
+}
+.container{
+    display: flex;
+}
+.influencer{
+    width: 580px;
+    height: 270px;
+    padding-top: 200px;
+    padding-left: 120px;
+}
+.icon{
+    display: flex;
+    width: 130px;
+    height: 44px;
+    padding: 10px 24px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    border: 1px solid #E02C6D;
+    border-radius: 20px;
+}
+.camera{
+    width: 440px;
+    height: 415px;
+    padding-top: 132px;
+    padding-left: 122px;
+}
