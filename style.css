@@ -4,12 +4,15 @@ body{
     margin: 0%;
     padding: 0%;
 }
+
 /* Header Style  */
 .header h3{
     font-size: 24px;
     margin-left: 30px;
-
 }
+
+/* First Section Styles */
+
 .banner{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -41,6 +44,12 @@ body{
     width: 14px;
     color: #FFFFFF;
 }
+.camera:hover img{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+}
+
+/* Brand Logos Style  */
 
 hr {
     margin: 20px 43px;
@@ -58,6 +67,8 @@ hr {
     width: 100px;
 }
 
+/* Products Collection Styles */
+
 .title{
     text-align: center;
     margin-top: 100px;
@@ -68,15 +79,13 @@ hr {
     height: 450px;
     background-color: #f7efef;
     padding: 10px;
-    /* margin: 10px; */
     margin-bottom: 36px;
     border-radius: 5px;
     box-shadow: 5px 3px 10px #ccc;
     overflow: hidden;
 }
 .product .product-image {
-    border-radius: 5px;
-    
+    border-radius: 5px;  
 }
 .product:hover .product-image {
     overflow: hidden;
@@ -112,11 +121,11 @@ hr {
     color: #b91e57;
 }
 
+/* Contact Styles */
 
 .contact-title h2 {
     text-align: center;
     font-size: 30px;
-    /* display: inline-block; */
     text-transform: uppercase;
     margin-bottom: 3rem;
 }
@@ -133,7 +142,15 @@ hr {
     margin-top: 32px;
     margin-right: 20px;
 }
-
+.button {
+    background-color: #A5194D;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
 #text-field{
     margin-bottom: 15px;
     padding: 10px;
@@ -141,6 +158,8 @@ hr {
     outline: 0;
     border: 1px solid #b91e57;
 }
+
+/* Footer Styles */
 
 .footer{
     text-align: center;
@@ -153,25 +172,17 @@ hr {
     align-items: center;
     margin-top: 75px;
 }
-
-
-@media only screen and (max-width:688px) {
-    .main-section, .container, .contact{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .banner, .products, .contact{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .brands-name{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-image img {
-        /* margin: 0 auto; */
-        /* max-width: 80%; */
-    }
+.copy-right h3 {
+    font-size: 2rem;
+    margin: 0;
 }
+
+
+/* ------------------
+    Responsive 
+------------------*/
+
+/* For Mobile Device  */
 
 @media only screen and (min-width:688px) and (max-width:992px) {
     .banner, .contact {
@@ -191,4 +202,26 @@ hr {
         grid-template-columns: repeat(1, 1fr);
     }
 
+}
+
+/* For Tablet */
+
+@media only screen and (max-width:688px) {
+    .main-section, .container, .footer {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner, .products, .contact{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .brands-name{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-us {
+        max-width: 100%;
+    }
+    .camera img,.contact img, .contact .contact-detail {
+        margin: 0 auto;
+        max-width: 80%;
+    }
 }
