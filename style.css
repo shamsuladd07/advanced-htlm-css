@@ -111,7 +111,8 @@ hr {
 }
 .more-products{
     text-align: end;
-    margin-right: 130px;
+    margin-right: 52px;
+    font-weight: 600;
 }
 .more-products a{
     text-decoration: none;
@@ -132,6 +133,8 @@ hr {
 .contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 .contact-image{
     margin-left: 20px;
@@ -223,5 +226,8 @@ hr {
     .camera img,.contact img, .contact .contact-detail {
         margin: 0 auto;
         max-width: 80%;
+    }
+    .footer{
+        margin-top: 50px;
     }
 }
